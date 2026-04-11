@@ -1,16 +1,17 @@
-import { createContext, useContext, useState } from "react"
+import { createContext, useContext } from "react"
+import { useWallet } from "../hooks/useWallet"
 
 const WalletContext = createContext()
 
 export function WalletProvider({ children }) {
-  const [wallet, setWallet] = useState(null)
+  const wallet = useWallet()
   return (
-    <WalletContext.Provider value={{ wallet, setWallet }}>
+    <WalletContext.Provider value={wallet}>
       {children}
     </WalletContext.Provider>
   )
 }
 
-export function useWallet() {
+export function useWalletContext() {
   return useContext(WalletContext)
 }

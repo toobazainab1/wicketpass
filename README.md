@@ -68,8 +68,8 @@ Built during **Entangled Hackathon 2026** on WireFluid.
 ## 👥 Team
 
 - Tooba Zainab  
-- Mahad Zulfiqar  
-- Minahil  
+- Minahil Nadeem 
+- Mahad Zulfiqar 
 
 ---
 
